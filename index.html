@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-orange-300">
+    <div class="flex  flex-col sm:flex-row sm:items-center h-screen gap-5 p-5">
+        <img  class="w-full sm:w-1/2 h-screen "src="./thumbnail7.png"/>
+
+      <form class="flex w-full sm:w-1/2 gap-5 flex-col">
+        <p class="font-bold text-4xl text-center">Registration Form</p>
+
+        <div class="flex w-full gap-5 flex-row">
+            <label>First name<input class="border rounded-md p-2 shadow-md w-full bg-gray-200" required type="text"></label>
+            <label>Middle name<input class="border rounded-md p-2 shadow-md w-full bg-gray-200" type="text"></label>
+            <label>Last name<input class="border rounded-md p-2 shadow-md w-full bg-gray-200" type="text"></label>
+        </div>
+
+        <label>Email<input class="border rounded-md p-2 w-full shadow-md bg-gray-200" type="email"></label>
+        <label>Phone<input class="border rounded-md p-2 w-full shadow-md bg-gray-200" type="tel" size="10" pattern="[0-9]{10}" name="Phone" required minlength="10" maxlength="10" placeholder="+91"></label>
+        <label>Address<input class="border rounded-md p-2 w-full shadow-md bg-gray-200" type="text"></label>
+        <label>City<input class="border rounded-md p-2 w-full shadow-md bg-gray-200" type="text"></label>
+        <label>State<input class="border rounded-md p-2 w-full shadow-md bg-gray-200" type="text"></label>
+        <label>Country<input class="border rounded-md p-2 w-full shadow-md bg-gray-200" type="text"></label>
+
+        <label><input class="border p2 w-full p-2 bg-green-600 cursor-pointer rounded-xl text-white hover:bg-green-700" type="submit"></label>
+        
+      </form>
+
+    </div>   
+</body>
+</html>
